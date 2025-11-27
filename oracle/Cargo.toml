@@ -1,0 +1,25 @@
+[package]
+name = "oracle"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+async-graphql.workspace = true
+async-trait.workspace = true
+futures.workspace = true
+linera-sdk.workspace = true
+oracle-ai-abi.workspace = true
+market = { path = "../market" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[[bin]]
+name = "oracle_contract"
+path = "src/contract.rs"
+
+[[bin]]
+name = "oracle_service"
+path = "src/service.rs"

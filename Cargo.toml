@@ -1,0 +1,37 @@
+[workspace]
+resolver = "2"
+members = [
+    "abi",
+    "token",
+    "market",
+    "oracle",
+    "ai-agent",
+]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["OracleAI Team"]
+edition = "2021"
+license = "MIT"
+
+[workspace.dependencies]
+async-graphql = "=7.0.17"
+async-trait = "0.1.77"
+futures = "0.3.30"
+linera-sdk = "0.15.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+log = "0.4"
+
+# Shared ABI
+oracle-ai-abi = { path = "./abi" }
+
+[profile.release]
+opt-level = 'z'  # Optimize for size (WASM)
+lto = true       # Link-time optimization
+strip = 'debuginfo'
+codegen-units = 1
+
+[profile.dev]
+opt-level = 1

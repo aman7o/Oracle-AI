@@ -1,0 +1,23 @@
+[package]
+name = "token"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+async-graphql.workspace = true
+async-trait.workspace = true
+futures.workspace = true
+linera-sdk.workspace = true
+oracle-ai-abi.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+
+[[bin]]
+name = "token_contract"
+path = "src/contract.rs"
+
+[[bin]]
+name = "token_service"
+path = "src/service.rs"
