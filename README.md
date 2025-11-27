@@ -178,11 +178,6 @@ oracle-ai/
 
 ---
 
-## 📞 **Team**
-
-- **Builder:** [Your Name]
-- **Discord:** [Your Handle]
-- **Email:** [Your Email]
 
 ---
 
@@ -194,7 +189,7 @@ MIT License - Build the future of autonomous markets!
 
 **🤖 OracleAI - Where AI Meets Prediction Markets**
 
-*Built with Claude API • Powered by Linera • Wave 3 Buildathon 2025*
+• Powered by Linera • Wave 3 Buildathon 2025*
 
 ---
 
